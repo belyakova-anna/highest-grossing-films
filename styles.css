@@ -305,6 +305,18 @@ body {
       transform: translateX(0);
       box-shadow: 4px 0 15px rgba(0,0,0,0.5);
     }
+
+    .selected {
+        font-size: 12px;
+    }
+
+    .input-group input {
+        font-size: 12px;
+    }
+
+    .values {
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 1025px) {
@@ -322,6 +334,7 @@ body {
     .filter-panel:not(.active) {
       transform: translateX(-100%);
     }
+
 }
 
 
@@ -352,6 +365,18 @@ body {
         margin-top: 15px;
         padding: 7px 12px;
     }
+
+    .selected {
+        font-size: 12px;
+    }
+
+    .input-group input {
+        font-size: 12px;
+    }
+
+    .values {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -379,6 +404,18 @@ body {
     #filter-button {
         margin-top: 15px;
         padding: 3px 7px;
+    }
+
+    .selected {
+        font-size: 10px;
+    }
+
+    .input-group input {
+        font-size: 10px;
+    }
+
+    .values {
+        font-size: 10px;
     }
 }
 
