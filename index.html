@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highest-grossing films</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="gradient-header">Highest-Grossing Films</h1>
+    <button id="filter-button">Filters</button>
+    <div id="filter-panel" class="filter-panel">
+        <span id="close-filter" class="close-btn">&times;</span>
+        <h3>Release year</h3>
+        <div class="range-container">
+            <div class="slider">
+                <input type="range" id="minYear" class="minYear">
+                <input type="range" id="maxYear" class="maxYear">
+            </div>
+            <div class="values">
+                <span id="minValue"></span>
+                <span id="maxValue"></span>
+            </div>
+        </div>
+
+        <h3>Box Office</h3>
+        <div class="range-container">
+            <div class="input-group">
+                <input type="number" id="minBoxOffice" placeholder="Min">
+                <input type="number" id="maxBoxOffice" placeholder="Max">
+            </div>
+        </div>
+
+        <h3>Titles</h3>
+        <div class="multiselect">
+            <div class="select-box">
+                <div class="selected" id="selected-counter" onclick="toggleDropdown(event)">Chosen: 0</div>
+                <div class="options-container">
+                    <div class="options-list" id="titles-list"></div>
+                    <button class="done-button">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <h3>Directors</h3>
+        <div class="multiselect">
+            <div class="select-box">
+                <div class="selected" id="selected-director-counter" onclick="toggleDropdown(event)">Chosen: 0</div>
+                <div class="options-container">
+                    <div class="options-list" id="directors-list"></div>
+                    <button class="done-button">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <h3>Countries</h3>
+        <div class="multiselect">
+            <div class="select-box">
+                <div class="selected" id="selected-country-counter" onclick="toggleDropdown(event)">Chosen: 0</div>
+                <div class="options-container">
+                    <div class="options-list" id="countries-list"></div>
+                    <button class="done-button">Save</button>
+                </div>
+            </div>
+        </div>
+        
+        <button id="applyFilter">Apply</button>
+    </div>
+    <div id="card-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

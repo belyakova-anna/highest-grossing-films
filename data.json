@@ -1,0 +1,402 @@
+[
+    {
+        "id": 1,
+        "title": "Avatar",
+        "release_year": 2009,
+        "director": "James Cameron",
+        "box_office": "2923706026",
+        "country": "United Kingdom, United States"
+    },
+    {
+        "id": 2,
+        "title": "Avengers: Endgame",
+        "release_year": 2019,
+        "director": "Anthony Russo, Joe Russo",
+        "box_office": "2797501328",
+        "country": "United States"
+    },
+    {
+        "id": 3,
+        "title": "Avatar: The Way of Water",
+        "release_year": 2022,
+        "director": "James Cameron",
+        "box_office": "2320250281",
+        "country": "United States"
+    },
+    {
+        "id": 4,
+        "title": "Titanic",
+        "release_year": 1997,
+        "director": "James Cameron",
+        "box_office": "2257844554",
+        "country": "United States"
+    },
+    {
+        "id": 5,
+        "title": "Star Wars: The Force Awakens",
+        "release_year": 2015,
+        "director": "J. J. Abrams",
+        "box_office": "2068223624",
+        "country": "United States"
+    },
+    {
+        "id": 6,
+        "title": "Avengers: Infinity War",
+        "release_year": 2018,
+        "director": "Anthony Russo, Joe Russo",
+        "box_office": "2048359754",
+        "country": "United States"
+    },
+    {
+        "id": 7,
+        "title": "Ne Zha 2",
+        "release_year": 2025,
+        "director": "Jiaozi",
+        "box_office": "1940172560",
+        "country": "China"
+    },
+    {
+        "id": 8,
+        "title": "SpiderMan: No Way Home",
+        "release_year": 2021,
+        "director": "Jon Watts",
+        "box_office": "1922598800",
+        "country": "United States"
+    },
+    {
+        "id": 9,
+        "title": "Inside Out 2",
+        "release_year": 2024,
+        "director": "Kelsey Mann",
+        "box_office": "1698863816",
+        "country": "United States"
+    },
+    {
+        "id": 10,
+        "title": "Jurassic World",
+        "release_year": 2015,
+        "director": "Colin Trevorrow",
+        "box_office": "1671537444",
+        "country": "United States"
+    },
+    {
+        "id": 11,
+        "title": "The Lion King",
+        "release_year": 2019,
+        "director": "Jon Favreau",
+        "box_office": "1656943394",
+        "country": "United States"
+    },
+    {
+        "id": 12,
+        "title": "The Avengers",
+        "release_year": 2012,
+        "director": "Joss Whedon",
+        "box_office": "1518815515",
+        "country": "United States"
+    },
+    {
+        "id": 13,
+        "title": "Furious 7",
+        "release_year": 2015,
+        "director": "James Wan",
+        "box_office": "1515341399",
+        "country": "United States, China"
+    },
+    {
+        "id": 14,
+        "title": "Top Gun: Maverick",
+        "release_year": 2022,
+        "director": "Joseph Kosinski",
+        "box_office": "1495696292",
+        "country": "United States"
+    },
+    {
+        "id": 15,
+        "title": "Frozen 2",
+        "release_year": 2019,
+        "director": "Chris Buck, Jennifer Lee",
+        "box_office": "1450026933",
+        "country": "United States"
+    },
+    {
+        "id": 16,
+        "title": "Barbie",
+        "release_year": 2023,
+        "director": "Greta Gerwig",
+        "box_office": "1447038421",
+        "country": "United States, United Kingdom"
+    },
+    {
+        "id": 17,
+        "title": "Avengers: Age of Ultron",
+        "release_year": 2015,
+        "director": "Joss Whedon",
+        "box_office": "1402809540",
+        "country": "United States"
+    },
+    {
+        "id": 18,
+        "title": "The Super Mario Bros. Movie",
+        "release_year": 2023,
+        "director": "Aaron Horvath, Michael Jelenic",
+        "box_office": "1362566989",
+        "country": "United States"
+    },
+    {
+        "id": 19,
+        "title": "Black Panther",
+        "release_year": 2018,
+        "director": "Ryan Coogler",
+        "box_office": "1347280838",
+        "country": "United States"
+    },
+    {
+        "id": 20,
+        "title": "Harry Potter and the Deathly Hallows – Part 2",
+        "release_year": 2011,
+        "director": "David Yates",
+        "box_office": "1342139727",
+        "country": "United Kingdom, United States"
+    },
+    {
+        "id": 21,
+        "title": "Deadpool & Wolverine",
+        "release_year": 2024,
+        "director": "Shawn Levy",
+        "box_office": "1338073645",
+        "country": "United States"
+    },
+    {
+        "id": 22,
+        "title": "Star Wars: The Last Jedi",
+        "release_year": 2017,
+        "director": "Rian Johnson",
+        "box_office": "1332539889",
+        "country": "United States"
+    },
+    {
+        "id": 23,
+        "title": "Jurassic World: Fallen Kingdom",
+        "release_year": 2018,
+        "director": "J. A. Bayona",
+        "box_office": "1308473425",
+        "country": "China, United States"
+    },
+    {
+        "id": 24,
+        "title": "Frozen",
+        "release_year": 2013,
+        "director": "Chris Buck, Jennifer Lee",
+        "box_office": "1290000000",
+        "country": "United States"
+    },
+    {
+        "id": 25,
+        "title": "Beauty and the Beast",
+        "release_year": 2017,
+        "director": "Bill Condon",
+        "box_office": "1263521126",
+        "country": "United States"
+    },
+    {
+        "id": 26,
+        "title": "Incredibles 2",
+        "release_year": 2018,
+        "director": "Brad Bird",
+        "box_office": "1242805359",
+        "country": "United States"
+    },
+    {
+        "id": 27,
+        "title": "The Fate of the Furious",
+        "release_year": 2017,
+        "director": "F. Gary Gray",
+        "box_office": "81238764765",
+        "country": "United States, China"
+    },
+    {
+        "id": 28,
+        "title": "Iron Man 3",
+        "release_year": 2013,
+        "director": "Shane Black",
+        "box_office": "1214811252",
+        "country": "United States"
+    },
+    {
+        "id": 29,
+        "title": "Minions",
+        "release_year": 2015,
+        "director": "Pierre Coffin, Kyle Balda",
+        "box_office": "1159444662",
+        "country": "United States"
+    },
+    {
+        "id": 30,
+        "title": "Captain America: Civil War",
+        "release_year": 2016,
+        "director": "Anthony RussoJoe Russo, Anthony Russo, Joe Russo",
+        "box_office": "1153337496",
+        "country": "United States"
+    },
+    {
+        "id": 31,
+        "title": "Aquaman",
+        "release_year": 2018,
+        "director": "James Wan",
+        "box_office": "1148528393",
+        "country": "United States"
+    },
+    {
+        "id": 32,
+        "title": "The Lord of the Rings: The Return of the King",
+        "release_year": 2003,
+        "director": "Peter Jackson",
+        "box_office": "1147997407",
+        "country": "New Zealand, Germany, United States"
+    },
+    {
+        "id": 33,
+        "title": "SpiderMan: Far From Home",
+        "release_year": 2019,
+        "director": "Jon Watts",
+        "box_office": "1132679685",
+        "country": "United States"
+    },
+    {
+        "id": 34,
+        "title": "Captain Marvel",
+        "release_year": 2019,
+        "director": "Anna Boden, Ryan Fleck",
+        "box_office": "1128274794",
+        "country": "United States"
+    },
+    {
+        "id": 35,
+        "title": "Transformers: Dark of the Moon",
+        "release_year": 2011,
+        "director": "Michael Bay",
+        "box_office": "1123794079",
+        "country": "United States"
+    },
+    {
+        "id": 36,
+        "title": "Skyfall",
+        "release_year": 2012,
+        "director": "Sam Mendes",
+        "box_office": "1108594137",
+        "country": "United Kingdom, United States"
+    },
+    {
+        "id": 37,
+        "title": "Transformers: Age of Extinction",
+        "release_year": 2014,
+        "director": "Michael Bay",
+        "box_office": "1104054072",
+        "country": "United States"
+    },
+    {
+        "id": 38,
+        "title": "The Dark Knight Rises",
+        "release_year": 2012,
+        "director": "Christopher Nolan",
+        "box_office": "1081169825",
+        "country": "United States, United Kingdom"
+    },
+    {
+        "id": 39,
+        "title": "Joker",
+        "release_year": 2019,
+        "director": "Todd Phillips",
+        "box_office": "1074458282",
+        "country": "United States"
+    },
+    {
+        "id": 40,
+        "title": "Star Wars: The Rise of Skywalker",
+        "release_year": 2019,
+        "director": "J. J. Abrams",
+        "box_office": "1074144248",
+        "country": "United States"
+    },
+    {
+        "id": 41,
+        "title": "Toy Story 4",
+        "release_year": 2019,
+        "director": "Josh Cooley",
+        "box_office": "1073394593",
+        "country": "United States"
+    },
+    {
+        "id": 42,
+        "title": "Toy Story 3",
+        "release_year": 2010,
+        "director": "Lee Unkrich",
+        "box_office": "1066970811",
+        "country": "United States"
+    },
+    {
+        "id": 43,
+        "title": "Pirates of the Caribbean: Dead Mans Chest",
+        "release_year": 2006,
+        "director": "Gore Verbinski",
+        "box_office": "1066179747",
+        "country": "United States"
+    },
+    {
+        "id": 44,
+        "title": "Rogue One: A Star Wars Story",
+        "release_year": 2016,
+        "director": "Gareth Edwards",
+        "box_office": "1057420387",
+        "country": "United States"
+    },
+    {
+        "id": 45,
+        "title": "Moana 2",
+        "release_year": 2024,
+        "director": "David Derrick Jr., Jason Hand, Dana Ledoux Miller",
+        "box_office": "1053578188",
+        "country": "United States"
+    },
+    {
+        "id": 46,
+        "title": "Aladdin",
+        "release_year": 2019,
+        "director": "Guy Ritchie",
+        "box_office": "1050693953",
+        "country": "United States"
+    },
+    {
+        "id": 47,
+        "title": "Star Wars: Episode I – The Phantom Menace",
+        "release_year": 1999,
+        "director": "George Lucas",
+        "box_office": "1046515409",
+        "country": "United States"
+    },
+    {
+        "id": 48,
+        "title": "Pirates of the Caribbean: On Stranger Tides",
+        "release_year": 2011,
+        "director": "Rob Marshall",
+        "box_office": "1045713802",
+        "country": "United States"
+    },
+    {
+        "id": 49,
+        "title": "Jurassic Park",
+        "release_year": 1993,
+        "director": "Steven Spielberg",
+        "box_office": "1037535230",
+        "country": "United States"
+    },
+    {
+        "id": 50,
+        "title": "Despicable Me 3",
+        "release_year": 2017,
+        "director": "Pierre Coffin, Kyle Balda",
+        "box_office": "1034800131",
+        "country": "United States"
+    }
+]
