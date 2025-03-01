@@ -65,12 +65,21 @@ function renderMovies(movies) {
         { key: "release_year", label: "Release year" },
         { key: "director", label: "Director" },
         { key: "box_office", label: "Box office" },
-        { key: "country", label: "Country" }
+        { key: "country", label: "Country" },
+        { key: null, label: "↺" }
     ];
 
     const header = document.createElement("div");
     header.classList.add("card", "sticky-header");
     header.innerHTML = columns.map(col => {
+        if (!col.key) {
+            return `<div onclick="resetSorting()" style="cursor: pointer; 
+                    display: flex; align-items: center; justify-content: center;
+                    min-width: 40px; padding: 0 8px;">
+                <strong style="color: #9747ff;">${col.label}</strong>
+            </div>`;
+        }
+
         const sortInfo = sortHistory.find(s => s.key === col.key);
         const baseStyle = "font-size: 10px; color: gray; display: flex; flex-direction: column; line-height: 0.8;";
         
@@ -93,6 +102,7 @@ function renderMovies(movies) {
         const card = document.createElement("div");
         card.classList.add("card");
         card.innerHTML = columns.map(col => {
+            if (!col.key) return '<div></div>';
             if (col.key === "box_office") {
                 return `<div>$${Number(movie[col.key]).toLocaleString()}</div>`;
             }
@@ -197,7 +207,7 @@ document.getElementById("applyFilter").addEventListener("click", () => {
         directors: [...selectedDirectors],
         countries: [...selectedCountries]
     };
-
+    filteredMoviesData = applyCurrentFilters();
     applySorting();
     
     renderMovies(filteredMoviesData);
@@ -428,4 +438,31 @@ function updateCheckboxes(containerId, appliedValues) {
     container.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
         checkbox.checked = appliedValues.includes(checkbox.value);
     });
+}
+
+function resetSorting() {
+    sortHistory = [];
+    filteredMoviesData = applyCurrentFilters();
+    renderMovies(filteredMoviesData);
+}
+
+function applyCurrentFilters() {
+    const { minYear, maxYear, minBoxOffice, maxBoxOffice, titles, directors, countries } = appliedFilters;
+    
+    let filtered = originalMoviesData.filter(movie => {
+        const yearValid = movie.release_year >= minYear && movie.release_year <= maxYear;
+        let boxOfficeValid = true;
+        const boxOffice = parseFloat(movie.box_office);
+        
+        if (!isNaN(minBoxOffice)) boxOfficeValid = boxOffice >= minBoxOffice;
+        if (!isNaN(maxBoxOffice)) boxOfficeValid = boxOfficeValid && boxOffice <= maxBoxOffice;
+        
+        return yearValid && boxOfficeValid;
+    });
+    
+    if (titles.length > 0) filtered = filtered.filter(movie => titles.includes(movie.title));
+    if (directors.length > 0) filtered = filtered.filter(movie => directors.includes(movie.director));
+    if (countries.length > 0) filtered = filtered.filter(movie => countries.includes(movie.country));
+    
+    return filtered;
 }
