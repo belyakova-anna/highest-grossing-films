@@ -13,7 +13,7 @@
     padding: 10px 0;
     margin: 0;
     width: max-content;
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     position: relative;
     left: 50%;
     transform: translateX(calc(-50% + var(--filter-panel-width)/2));
@@ -267,30 +267,48 @@ body {
     color: #9747ff;
 }
 
-@media (max-width: 1024px) {
-    .filter-panel.active ~ * {
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
+@media (min-width: 1025px) {
+    #card-container {
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(var(--filter-panel-width));
     }
     
-    .filter-panel.active {
-        transform: translateX(0);
-        box-shadow: 4px 0 15px rgba(0,0,0,0.5);
-    }
-
-    .filter-panel.active + #filter-button {
-        opacity: 0;
-        pointer-events: none;
-    }
-}
-
-@media (min-width: 1025px) {
     .filter-panel {
-        width: 250px !important;
+      width: 250px;
+      transform: translateX(0);
+      box-shadow: 4px 0 15px rgba(0,0,0,0.5);
     }
-}
+    
+    .filter-panel:not(.active) {
+      transform: translateX(-100%);
+    }
+  }
 
+
+@media (max-width: 1024px) {
+    body.filter-panel-active {
+      overflow: hidden;
+    }
+  
+    body.filter-panel-active > *:not(.filter-panel) {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.15s, visibility 0s linear 0.15s;
+      pointer-events: none;
+    }
+  
+    .filter-panel {
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(-100%);
+    }
+  
+    .filter-panel.active {
+      transform: translateX(0);
+      box-shadow: 4px 0 15px rgba(0,0,0,0.5);
+    }
+  }
+
+  
 
 @media (max-width: 768px) {
     .filter-panel > h3 {

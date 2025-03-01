@@ -201,18 +201,24 @@ document.getElementById("applyFilter").addEventListener("click", () => {
     applySorting();
     
     renderMovies(filteredMoviesData);
+    console.log("apply filter");
     closeFilterPanel();
 });
 
 document.getElementById("filter-button").addEventListener("click", () => {
     const filterPanel = document.getElementById("filter-panel");
-    filterPanel.classList.toggle("active");
-
-    const cardContainer = document.getElementById("card-container");
-    const filterPanelWidth = filterPanel.classList.contains("active") ? filterPanel.offsetWidth : 0;
-
-    document.documentElement.style.setProperty("--filter-panel-width", `${filterPanelWidth}px`);
     
+    if (window.matchMedia("(max-width: 1024px)").matches) {
+        document.body.classList.add("filter-panel-active");
+        setTimeout(() => {
+            filterPanel.classList.add("active");
+        }, 10); // Небольшая задержка для активации transition
+    } else {
+        filterPanel.classList.toggle("active");
+        const panelWidth = filterPanel.classList.contains("active") ? 250 : 0;
+        document.documentElement.style.setProperty("--filter-panel-width", `${panelWidth}px`);
+
+    }
 });
 
 
@@ -378,10 +384,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function closeFilterPanel() {
     resetUnsavedFilters();
+
     const filterPanel = document.getElementById("filter-panel");
+    
+    if (window.matchMedia("(max-width: 1024px)").matches) {
+        filterPanel.classList.remove("active");
+        setTimeout(() => {
+            document.body.classList.remove("filter-panel-active");
+        }, 300); // Ждем завершения анимации
+    }
     filterPanel.classList.remove("active");
     document.documentElement.style.setProperty("--filter-panel-width", "0px");
 }
+
 
 document.getElementById("close-filter").addEventListener("click", closeFilterPanel);
 
